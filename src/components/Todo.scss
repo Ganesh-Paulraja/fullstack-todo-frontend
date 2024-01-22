@@ -1,0 +1,70 @@
+.gg-todo-wrap {
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .gg-input-wrap {
+        padding-top: 35px;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        input {
+            width: 400px;
+            border: none;
+            border-bottom: 2px solid #000000;
+            text-align: left;
+            padding-bottom: 3px;
+            outline: none;
+            font-size: 20px;
+            @media screen and (max-width: 600px) {
+                font-size: 16px;
+            }
+            &::placeholder {
+                color: gray;
+            }
+            &::-ms-input-placeholder  {
+                color: gray;
+            }
+        }
+        button {
+            display: inline-block;
+            background-color: black;
+            color: #ffffff;
+            width: 100px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            height: 30px;
+            margin-left: 10px;
+        }
+        .gg-task-wrap {
+            margin-top: 14px;
+            background: #000;
+            color: #fff;
+            width: 100%;
+            min-height: 50px;
+            border-radius: 5px;
+            position: relative;
+            .gg-edit {
+                position: absolute;
+                right: 55px;
+                top: 14px;
+                cursor: pointer;
+                z-index: 9;
+            }
+            .gg-del {
+                position: absolute;
+                right: 22px;
+                top: 15px;
+                cursor: pointer;
+                z-index: 9;
+            }
+            .gg-text {
+                text-align: left;
+                padding-left: 30px;
+                padding-top: 14px;
+            }
+        }
+    }
+}
